@@ -1,5 +1,7 @@
 # Quotes Generator using Next.js + Tailwind CSS
 
+![image](https://user-images.githubusercontent.com/739061/213029842-a39a6e96-8697-492a-8786-e0489ed2540a.png)
+
 ## Deploy your own
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
