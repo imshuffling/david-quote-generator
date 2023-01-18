@@ -42,8 +42,8 @@ const Home: NextPage = () => {
         />
       </Head>
 
-      <main className='flex w-full max-w-5xl flex-1 flex-col items-center justify-center px-12 text-center'>
-        <h1 className='text-4xl font-bold'>Quote Generator</h1>
+      <main className='flex w-full max-w-5xl flex-1 flex-col items-center justify-center px-2 md:px-12 text-center'>
+        <h1 className='text-2xl md:text-4xl font-bold'>Quote Generator</h1>
         <section>
           {!quote?.text && (
             <div className='text-center'>
@@ -71,12 +71,16 @@ const Home: NextPage = () => {
 
           {quote?.text && (
             <>
-              <h3 className='text-6xl font-bold'>
+              <h3 className='text-4xl md:text-6xl font-bold'>
                 <span>"</span>
                 {quote?.text}
                 <span>"</span>
               </h3>
-              <p className='mt-4 text-2xl'>- {quote?.author}</p>
+              {quote?.author && (
+                <p className='mt-2 md:mt-4 text-xl md:text-2xl'>
+                  - {quote?.author}
+                </p>
+              )}
             </>
           )}
           <button
